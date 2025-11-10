@@ -1,13 +1,13 @@
 # LiDAR to RS232 Converter for TracMap (Raspberry Pi Pico)
 
 This project uses a **Raspberry Pi Pico** to convert **RS485 data from a LiDAR sensor** into **RS232 format**, making it compatible with **TracMap systems**.  
-An additional **TTL-to-RS232 converter board** is used to provide the final signal output.
+
 
 ---
 
 ## 📁 Project Overview
 
-- **`main.py`** – Updated and optimized version of the original `lidar_pico.py`.  
+- **`V2.1.py`** – Updated and optimized version of the original `lidar_pico.py`.  
   - Faster data processing  
   - Improved packet handling (reduces partial packets)  
 - **`lidar_pico.py`** – Original version (kept for reference)  
@@ -38,8 +38,8 @@ Two separate ground connections are used on the converter board:
 ## 🧠 Raspberry Pi Pico Setup
 
 1. Flash **MicroPython** onto your Raspberry Pi Pico.  
-2. Copy **`main.py`** (from this repository) directly onto the Pico.  
-3. **Do not rename the file** – it must be called `main.py` to auto-run on power-up.  
+2. Copy **`V2.1 (or latest version)`** (from this repository) directly onto the Pico.  
+3. **Rename the file to main.py** – it must be called `main.py` to auto-run on power-up.  
 
 ---
 
